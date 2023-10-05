@@ -70,7 +70,7 @@ def extract_education_from_resume(text):
 
 def extract_internships_from_resume(text):
     internships = []
-    roles_list = pd.read_csv("src/roles.csv")["roles"].tolist()
+    roles_list = pd.read_csv("roles.csv")["roles"].tolist()
     # Define keywords related to internships
     internship_keywords = ['Internship', 'Intern', 'Trainee', 'intern', 'Junior', 'junior', 'Senior', 'senior', 'role', 'Role'] + roles_list
 
@@ -89,7 +89,7 @@ def extract_internships_from_resume(text):
 
 def extract_projects_from_resume(text):
     projects = []
-    roles_list = pd.read_csv("src/roles.csv")["roles"].tolist()
+    roles_list = pd.read_csv("roles.csv")["roles"].tolist()
     # Define keywords related to projects
     project_keywords = ['Projects', 'Project', 'Work', 'Experience', 'Job', 'Role', 'role', 'MNIST', 'CNN', 'data'] + roles_list
 
