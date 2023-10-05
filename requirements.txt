@@ -1,5 +1,5 @@
 flask
-open-cv
+opencv-python
 numpy
 pandas
 pdfminer.six
