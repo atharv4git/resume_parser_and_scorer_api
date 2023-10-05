@@ -1,5 +1,4 @@
 Flask
-flask
 opencv-python
 numpy
 pandas
