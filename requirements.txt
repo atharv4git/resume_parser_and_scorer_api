@@ -1,6 +1,4 @@
 Flask
-opencv-python
-numpy
 pandas
 pdfminer.six
 requests

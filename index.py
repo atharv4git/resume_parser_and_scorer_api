@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-import numpy as np
 import requests
 from extractions import *
 from sklearn.feature_extraction.text import TfidfVectorizer
