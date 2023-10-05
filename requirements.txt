@@ -4,4 +4,3 @@ pdfminer.six
 requests
 scikit-learn
 gunicorn
-os
