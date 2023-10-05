@@ -1,0 +1,7 @@
+flask
+open-cv
+numpy
+pandas
+pdfminer.six
+requests
+scikit-learn
