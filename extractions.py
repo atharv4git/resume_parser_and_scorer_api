@@ -23,16 +23,6 @@ def extract_email_from_resume(text):
 
     return email
 
-# def extract_skills_from_resume(text, skills_list):
-#     skills = []
-
-#     for skill in skills_list:
-#         pattern = r"\b{}\b".format(re.escape(skill))
-#         match = re.search(pattern, text, re.IGNORECASE)
-#         if match:
-#             skills.append(skill)
-
-#     return skills
 
 def extract_skills_from_resume(text, skills_list):
     skills = []
@@ -49,32 +39,6 @@ def extract_skills_from_resume(text, skills_list):
                 break  # Stop searching for the current skill once found
 
     return skills
-
-
-
-# def extract_name(resume_text):
-#     nlp = spacy.load('en_core_web_sm')
-#     matcher = Matcher(nlp.vocab)
-
-#     # Define name patterns
-#     patterns = [
-#         [{'POS': 'PROPN'}, {'POS': 'PROPN'}],  # First name and Last name
-#         [{'POS': 'PROPN'}, {'POS': 'PROPN'}, {'POS': 'PROPN'}],  # First name, Middle name, and Last name
-#         [{'POS': 'PROPN'}, {'POS': 'PROPN'}, {'POS': 'PROPN'}, {'POS': 'PROPN'}]  # First name, Middle name, Middle name, and Last name
-#         # Add more patterns as needed
-#     ]
-
-#     for pattern in patterns:
-#         matcher.add('NAME', patterns=[pattern])
-
-#     doc = nlp(resume_text)
-#     matches = matcher(doc)
-
-#     for match_id, start, end in matches:
-#         span = doc[start:end]
-#         return span.text
-
-#     return None
 
 
 def extract_name(resume_text):
