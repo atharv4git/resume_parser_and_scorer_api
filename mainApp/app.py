@@ -4,10 +4,15 @@ from extractions import *
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from pdfminer.high_level import extract_text
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
+
 
 @app.route('/', methods=['POST'])
+@cross_origin()
 def create_resource():
     try:
         data = request.get_json()  # Get the JSON data from the request
